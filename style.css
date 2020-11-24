@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+.instagram-div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  width: 1000px;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url("./assets/device.png");
+  height: 600px;
+  width: 500px;
+}
+
+.instagram-phone img {
+  margin-left: 44px;
+  margin-top: 5px;
+  height: 430px;
+  position: absolute;
+  transition: opacity 2.5s;
+}
+.instagram-phone img + img {
+  opacity: 0;
+}
+
+.instagram-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 350px;
+
+  min-height: 34rem;
+}
+.user-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 430px;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  height: 350px;
+}
+.user-div:nth-child(1) {
+  min-height: 19rem;
+}
+.user-div:nth-child(1) button {
+  background-color: #0095f6;
+  padding: 6px 30px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  margin: 20px;
+}
+.user-div div {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+}
+.user-div div a {
+  margin-right: 3px;
+}
+.user-div div a + a {
+  color: #0095f6;
+}
+
+.instagram-logo {
+  height: 5rem;
+}
+.instagram-profile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 7rem;
+}
+
+@media (max-width: 900px) {
+  .instagram-phone {
+    display: none;
+  }
+  .instagram-div {
+    justify-content: center;
+  }
+  body {
+    width: 100%;
+  }
+}
